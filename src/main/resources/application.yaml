@@ -1,0 +1,15 @@
+server:
+  port: 9080
+
+# javafx配置
+javafx:
+  # 应用名
+  title: javafx-springboot-frame
+  # 图标
+  appicons: /icon/icon.png
+  # 视图舞台
+  stage:
+    # 是否可以重置视图大小
+    resizable: true
+    # width: 900
+    # height: 600

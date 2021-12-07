@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.javafx.demo.controller.NewController">
+    <HBox spacing="10">
+        <JFXButton prefWidth="100" prefHeight="40" buttonType="RAISED" text="BUTTON"
+                   style="-fx-font-size:14px;-fx-background-color:WHITE;"/>
+        <JFXButton prefWidth="100" prefHeight="40" buttonType="RAISED" text="COLORED" fx:id="dialogButton"
+                   style="-fx-text-fill:WHITE;-fx-background-color:#5264AE;-fx-font-size:14px;"/>
+        <JFXButton prefWidth="100" prefHeight="40" buttonType="RAISED" text="DISABLED"
+                   style="-fx-background-color:WHITE;-fx-font-size:14px;" disable="true"/>
+        <JFXCheckBox text="Notifications" styleClass="custom-jfx-check-box"></JFXCheckBox>
+        <JFXCheckBox text="Auto Updates" styleClass="custom-jfx-check-box-all-colored"></JFXCheckBox>
+        <padding>
+            <Insets top="10" left="20"/>
+        </padding>
+    </HBox>
+    <HBox spacing="40" style="-fx-padding: 100 0 0 50;">
+        <children>
+            <JFXDatePicker fx:id="dateOverlay" overLay="true"
+                           styleClass="custom-color-picker"></JFXDatePicker>
+            <JFXTimePicker fx:id="timeOverlay" overLay="true"
+                           styleClass="custom-color-picker"></JFXTimePicker>
+        </children>
+    </HBox>
+</StackPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="900.0" stylesheets="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.demo.controller.DemoController">
+    <children>
+        <BorderPane fx:id="borderPane" layoutY="2.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+            <top>
+                <HBox prefHeight="32.0" prefWidth="72.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <MenuBar fx:id="mainMenuBar" prefHeight="32.0" prefWidth="873.0">
+                            <menus>
+                                <Menu fx:id="fileMenu" mnemonicParsing="false" text="%File">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#mtimeTip" text="%TimeTip" />
+                                        <MenuItem mnemonicParsing="false" onAction="#newTab" text="%NewTab" />
+                                        <MenuItem mnemonicParsing="false" onAction="#newTab2" text="%NewTab2" />
+                                        <SeparatorMenuItem mnemonicParsing="false" />
+                                        <MenuItem mnemonicParsing="false" onAction="#exit" text="%Exit" />
+                                    </items>
+                                </Menu>
+                                <Menu fx:id="ToolsMenu" mnemonicParsing="false" text="%Tools">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#fileSelect" text="%FileChoose" />
+                                        <MenuItem mnemonicParsing="false" onAction="#mLogin" text="%Login" />
+                                        <MenuItem mnemonicParsing="false" onAction="#mMenu" text="%Menu" />
+                                        <Menu mnemonicParsing="false" text="%OpenNew">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#mOpenNew" text="%NewPage" />
+                                                <MenuItem mnemonicParsing="false" onAction="#mOpenNew2" text="%NewPage2" />
+                                    <MenuItem mnemonicParsing="false" onAction="#openPic" text="%OpenPic" />
+                                            </items>
+                                        </Menu>
+                                        <Menu mnemonicParsing="false" text="%TabPane">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#mTabPane" text="%TabPane" />
+                                                <MenuItem mnemonicParsing="false" onAction="#mTabPane2" text="%TabPane2" />
+                                            </items>
+                                        </Menu>
+                                        <Menu mnemonicParsing="false" text="%BtnGroup">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#mBtnGroup" text="%BtnGroup" />
+                                                <MenuItem mnemonicParsing="false" onAction="#mBtnGroup2" text="%BtnGroup2" />
+                                            </items>
+                                        </Menu>
+                                    </items>
+                                </Menu>
+                                <Menu fx:id="helpMenu" mnemonicParsing="false" text="%Help">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#about" text="%About" />
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </children>
+                </HBox>
+            </top>
+            <center>
+                <TabPane fx:id="tabPaneMain" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="15.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.demo.controller.New2Controller">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+    <children>
+        <CheckBox fx:id="exitShowAlertCheckBox" mnemonicParsing="false" selected="true" text="退出时是否显示确认对话框"/>
+        <CheckBox fx:id="saveStageBoundSize" mnemonicParsing="false" selected="true" text="是否在退出时保存窗口大小"/>
+        <CheckBox fx:id="saveStageBoundLocation" mnemonicParsing="false" selected="true" text="是否在退出时保存窗口位置信息"/>
+    </children>
+</VBox>
