@@ -1,2 +1,2 @@
 # javafx-springboot-frame
-javafx结合springboot开发框架使用
+javafx结合springboot开发使用脚手架
